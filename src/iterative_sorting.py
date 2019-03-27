@@ -21,7 +21,6 @@ def selection_sort(arr):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     swapped = True
-    print(f'{arr}')
 
     while swapped:
         swapped = False
