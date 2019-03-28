@@ -93,6 +93,17 @@ class SortingTest(unittest.TestCase):
         self.assertEqual(merge_sort_in_place(
             arr4, 0, len(arr4)-1), [0, 1, 2, 3, 4, 5])
 
+    def test_timsort(self):
+        arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+        arr2 = []
+        arr3 = [2]
+        arr4 = [0, 1, 2, 3, 4, 5]
+
+        self.assertEqual(timsort(arr1), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+        self.assertEqual(timsort(arr2), [])
+        self.assertEqual(timsort(arr3), [2])
+        self.assertEqual(timsort(arr4), [0, 1, 2, 3, 4, 5])
+
 
 if __name__ == '__main__':
     unittest.main()
